@@ -2,8 +2,8 @@ import json
 import sqlite3
 from datetime import datetime
 
-db = sqlite3.connect('D:/DUMENYS/DARIUS/Desktop/mydb.sqlite')
-with open('D:/DUMENYS/DARIUS/Desktop/myJSON.json', encoding='utf-8-sig') as json_file:
+db = sqlite3.connect('mydb.sqlite')
+with open('myJSON.json', encoding='utf-8-sig') as json_file:
     json_data = json.loads(json_file.read())
 
     # Aim of this block is to get the list of the columns in the JSON file.
